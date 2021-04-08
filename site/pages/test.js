@@ -11,8 +11,7 @@ function Test() {
     <div>Test_Page</div>
   )
 }
-
-Test.getInitialProps = async() => {
+export async function getInitialProps () {
   const request = new Promise((resolve) => {
     axios(url).then(res => {
       console.log('res', res)
